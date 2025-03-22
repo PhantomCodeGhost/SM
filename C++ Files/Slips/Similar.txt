@@ -1,0 +1,12 @@
+
+- C++ 
+    Slip 4,9(3:2) 90% similar
+    Slip6,19 (3:2)
+    Slip14,17 (3:2) kinda similar
+    Slip 11,15(3:2) 
+    Slip 3,8,10 (3:2:3) 90%
+    Slip 7,16 (1:1)
+
+
+- python 
+    Slip 10 : Q2 , Q3 are same (mostly)
