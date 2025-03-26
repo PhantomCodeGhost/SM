@@ -64,16 +64,10 @@ class Date{
     private :
         int dd;
         int mm;
-        int yy;
+        int yyyy;
     public:
-        Date(){
-            cout<<"Enter Day : ";
-            cin>>dd;
-            cout<<"Enter Month : ";
-            cin>>mm;
-            cout<<"Enter Year : ";
-            cin>>yy;
-            
+        Date(int d, int m, int y) : dd(d), mm(m), yyyy(y){
+         
             if(mm >=1 && mm <=12){
                 cout<<"Month is Valid!!!"<<endl;
             }else{
@@ -83,11 +77,13 @@ class Date{
         }
     void display(){
         string months[] = {"January","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"};
-        cout<<dd<<"-"<<months[mm-1]<<"-"<<yy<<endl;
+        cout<<dd<<"-"<<months[mm-1]<<"-"<<yyyy<<endl;
     }
 };
-int main(){
-    Date D;
-    D.display();
-    return 0;
+int main() {
+    int d,m,y;
+    cout<<"Enter dd mm yy : ";
+            cin>>d>>m>>y;
+    Date d1(d,m,y);
+    d1.display();
 }
